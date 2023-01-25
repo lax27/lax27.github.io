@@ -5,15 +5,17 @@ Ademas, vamos a aprovechar para hablar de Markdow.
 Aqui almacenaremos la pagina web estatica de la asignatura asi como algunos ejemplos de Markdown, CSS, Javascript, etc...
 .
 
-Dos **asteriscos** sigifica BOLD(negrita). **
+- Dos **asteriscos** sigifica BOLD(negrita). **
 
 
-Un *astersico* sigifica ITALIC(cursiva). *
+- Un *astersico* sigifica ITALIC(cursiva). *
 
 
-Un _guion bajo_ sigifica tabien ITALIC(cursiva). _
+- Un _guion bajo_ sigifica tabien ITALIC(cursiva). _
 
 
-Para ***BOLD ITALIC*** tres asteriscos. ***
+- Para ***BOLD ITALIC*** tres asteriscos. ***
 
-Para saltos de liena hay que dar dos saltos de liena.
+- Para saltos de liena hay que dar dos saltos de liena.
+
+- Guion seguido de espacio para hacer un item de lista. - 
