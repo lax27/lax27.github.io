@@ -19,3 +19,10 @@ Aqui almacenaremos la pagina web estatica de la asignatura asi como algunos ejem
 - Para saltos de liena hay que dar dos saltos de liena.
 
 - Guion seguido de espacio para hacer un item de lista. - 
+
+## Ejemplos de lista de tareas (tasks)
+
+- [ ] Aprender HTML
+- [ ] Aprender CSS
+- [ ] Aprender Javascript
+- [X] Aprender MySQL  
