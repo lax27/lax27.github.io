@@ -1,5 +1,5 @@
 html{
-font-family: 'Press Start 2P', cursive;
+
 }
 h1,h2,h3,h4,h5,h6{
 font-family: 'Ubuntu condensed', sans-serif;
@@ -18,6 +18,39 @@ display:flex;
 main{
 display:flex;
 }
+article{
+flex-basis: 75%;
+}
+aside{
+flex-basis: 25%;
+}
+
+@media (max-width: 600px){
+main{
+flex-direction:column;	
+}
+article{
+flex-basis:100%;
+}
+aside{
+flex-basis:100%;
+}
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 nav li {
    list-style-type: none;
