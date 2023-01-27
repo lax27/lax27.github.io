@@ -12,7 +12,10 @@
 <link rel="stylesheet" href="base.css" />
 
 <script>
-fetch("https://lax27.github.io/game.json").then(response => response.json()).then(data => console.log(data));
+function game(data){
+console.log("data");
+}
+fetch("https://lax27.github.io/game.html").then(response => response.json()).then(data => game(data));
 </script>
 
 </head>
