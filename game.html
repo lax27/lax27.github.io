@@ -13,10 +13,18 @@
 <link rel="stylesheet" href="game.css" />
 
 <script>
-function game(data){
+let game_data;
+
+function game (data){
+game_data = data;
+
+document.getElementById("terminal").innerHTML = "<P><strong>¡Bienvenidos a entierrame!</strong> El juego de terror definitivo</p>";
+
+
+
 console.log(data.rooms[0].name);
 }
-fetch("https://lax27.github.io/game.html").then(response => response.json()).then(data => game(data));
+fetch("https://lax27.github.io/game.json").then(response => response.json()).then(data => game(data));
 </script>
 
 </head>
