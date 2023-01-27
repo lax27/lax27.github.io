@@ -13,7 +13,7 @@
 
 <script>
 function game(data){
-console.log("data");
+console.log(data.rooms[0].name);
 }
 fetch("https://lax27.github.io/game.html").then(response => response.json()).then(data => game(data));
 </script>
