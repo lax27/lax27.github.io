@@ -14,7 +14,7 @@
 	{"id":"bicicleta", "name":"bicicleta extraña", "description":"Es una bicicleta abandonada con un asiento un poco extraño ", "pickable":"false"}
  ],
  "doors":[
-	{"id":"principal", "description": "Puerta de entrada al  edificio", "rooms":["parking", "hall"]}
+	{"id":"principal", "description": "Puerta de entrada al  edificio", "rooms":["parking", "hall"]},
 	{"id":"salida", "description": "La salvacion"}
  ]
 }
