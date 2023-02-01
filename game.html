@@ -21,7 +21,7 @@ let items_picked = [];
 function terminal_out (info){
 let terminal = document.getElementById("terminal");
 terminal.innerHTML += info;
-terminal.scrollTop = terminal.scrollHeigth;
+terminal.scrollTop = terminal.scrollHeight;
 }
 
 function paraseComand(comand){
@@ -51,6 +51,7 @@ switch (comand){
 
 function paraseInstruction(instruction){
 console.log("La instrucion", instruction);
+
 }
 
 function readAction(){
@@ -75,11 +76,7 @@ game_data = data;
 
 document.getElementById("terminal").innerHTML = "<p><strong>¡Bienvenidos a DarkIkea!</strong> El juego de terror definitivo</p>";
 document.getElementById("terminal").innerHTML +="<p>Te encuentras en "+game_data.rooms[current_room].name+". ¿que quieres hacer?</P>";
-
-console.log(data.rooms[0].name);
 }
-
-
 fetch("https://lax27.github.io/game.json").then(response => response.json()).then(data => game(data));
 </script>
 
