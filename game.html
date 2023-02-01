@@ -17,6 +17,27 @@ let game_data;
 let current_room = 0;
 let items_picked = [];
 
+function paraseComand(comand){
+
+}
+
+function paraseInstruction(instrucion){
+
+}
+
+function readAction(){
+let instruction = document.getElementById("comand").value;
+let data = instrucion.split(" ");
+if (data.length == 0){
+document.getElementById("terminal").innerHTML += "<p>strong>Error</strong>: escribe una instrucion</p>";
+return
+}
+if(data.length == 1){
+paraseComand(data[0]);
+}
+else {paraseInstruction(data);
+}
+
 function game (data){
 game_data = data;
 
@@ -49,7 +70,7 @@ fetch("https://lax27.github.io/game.json").then(response => response.json()).the
 	<div id="terminal">
 	</div>
 	<input type="text" id="comand"/>
-	<input type="submit" value="Acción"/>
+	<input type="submit" onclick="readAction(); return false;" value="Acción"/>
 </form>
 </article>
 <aside>
