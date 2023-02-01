@@ -12,7 +12,7 @@
 	"name":"El Hall de Ikea", 
 	"description":"Te encuentras en el hall de ikea,pero estas solo y todo esta a oscuras.",
 	"items":["moneda de 1€","Linterna"],
-	"doors":["principal","",""]
+	"doors":["principal","pasillo"]
 	}
  ],
  "items":[

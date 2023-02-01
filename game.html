@@ -17,12 +17,22 @@ let game_data;
 let current_room = 0;
 let items_picked = [];
 
+
+function terminal_out (info){
+document.getElementById("terminal").innerHTML += info;
+}
+
 function paraseComand(comand){
 console.log("El comando", comand);
-if(comand == "ver"){
-document.getElementById("terminal").innerHTML += "<p>Puedes ir a:"+game_data.rooms[current_room].name+".</p>"; 
+switch (command){
+	case "ver":
+		terminal_out("<p>"+game_data.rooms[current_room].description+"</p>");
+	break;
+	default:
+		terminal_out("<p>"+comand+" Comando no encontrado</p>");
 }
-}	
+}
+	
 
 function paraseInstruction(instruction){
 console.log("La instrucion", instruction);
@@ -44,6 +54,7 @@ else {
 paraseInstruction(data);
 }
 }
+
 function game (data){
 game_data = data;
 
@@ -52,6 +63,8 @@ document.getElementById("terminal").innerHTML +="<p>Te encuentras en "+game_data
 
 console.log(data.rooms[0].name);
 }
+
+
 fetch("https://lax27.github.io/game.json").then(response => response.json()).then(data => game(data));
 </script>
 
