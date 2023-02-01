@@ -42,8 +42,9 @@ flex-basis:100%;
 	min-width:240px;
 	height:120px;
 	overflow:scroll;
-	display:flex;
-	flex-direction:column-reverse;
+}
+div{
+display:block;
 }
 
 
