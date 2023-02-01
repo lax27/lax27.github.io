@@ -6,7 +6,7 @@
 	"name":"Parking", 
 	"description":"el parking que no puedes usar",
 	"items":["piedra","bicicleta"],
-	"doors":["principal","salida","hall"]
+	"doors":["principal","hall de Ikea"]
 	},
 	{"id":"hall",
 	"name":"El Hall de Ikea", 
