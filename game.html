@@ -21,23 +21,23 @@ function paraseComand(comand){
 
 }
 
-function paraseInstruction(instrucion){
+function paraseInstruction(instruction){
 
 }
 
 function readAction(){
 let instruction = document.getElementById("comand").value;
-let data = instrucion.split(" ");
+let data = instruction.split(" ");
 if (data.length == 0){
 document.getElementById("terminal").innerHTML += "<p>strong>Error</strong>: escribe una instrucion</p>";
-return
+return;
 }
 if(data.length == 1){
 paraseComand(data[0]);
 }
 else {paraseInstruction(data);
 }
-
+}
 function game (data){
 game_data = data;
 
