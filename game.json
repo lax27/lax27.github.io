@@ -7,68 +7,14 @@
 	"description":"el parking que no puedes usar",
 	"items":["piedra","bicicleta"],
 	"doors":["principal","salida"]
-	},
-	
-	{"id":"IkeaHall",
-	"name":"hall del Ikea", 
-	"description":"Estas en el hall del Ikea, pero esta oscuro y estas solo.",
-	"items":[""],
-	"doors":[""]
-	},
-	
-	{"id":"",
-	"name":"", 
-	"description":"",
-	"items":[""],
-	"doors":[""]
-	},
-	
-	{"id":"",
-	"name":"", 
-	"description":"",
-	"items":[""],
-	"doors":[""]
-	},
-	
-	{"id":"",
-	"name":"", 
-	"description":"",
-	"items":[""],
-	"doors":[""]
-	},
-	
-	{"id":"",
-	"name":"", 
-	"description":"",
-	"items":[""],
-	"doors":[""]
-	},
+	}
  ],
  "items":[
 	{"id":"piedra", "name":"Pedrusco murgoso", "description":"Es una piedra sucia", "pickable":"true"},
-	{"id":"bicicleta", "name":"bicicleta extraña", "description":"Es una bicicleta abandonada con un asiento un poco extraño ", "pickable":"false"},
-	{"id":"", "name":"", "description":"", "pickable":""},
-	{"id":"", "name":"", "description":"", "pickable":""},
-	{"id":"", "name":"", "description":"", "pickable":""},
-	{"id":"", "name":"", "description":"", "pickable":""},
-	{"id":"", "name":"", "description":"", "pickable":""},
-	{"id":"", "name":"", "description":"", "pickable":""}
+	{"id":"bicicleta", "name":"bicicleta extraña", "description":"Es una bicicleta abandonada con un asiento un poco extraño ", "pickable":"false"}
  ],
  "doors":[
 	{"id":"principal", "description": "Puerta de entrada al  edificio", "rooms":["parking", "hall"]},
-	{"id":"", "description": "", "rooms":[""]},
-	{"id":"", "description": "", "rooms":[""]},
-	{"id":"", "description": "", "rooms":[""]},
-	{"id":"", "description": "", "rooms":[""]},
-	{"id":"", "description": "", "rooms":[""]},
-	{"id":"", "description": "", "rooms":[""]},
-	{"id":"", "description": "", "rooms":[""]},
-	{"id":"", "description": "", "rooms":[""]},
-	{"id":"", "description": "", "rooms":[""]},
-	{"id":"", "description": "", "rooms":[""]},
-	{"id":"", "description": "", "rooms":[""]},
-	{"id":"", "description": "", "rooms":[""]},
-	{"id":"", "description": "", "rooms":[""]},
 	{"id":"salida", "description": "La salvacion"}
  ]
 }
