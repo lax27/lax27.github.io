@@ -6,13 +6,13 @@
 	"name":"El Parking", 
 	"description":"el parking que no puedes usar",
 	"items":["piedra","bicicleta"],
-	"doors":["principal","hall de Ikea"]
+	"doors":["principal","hall"]
 	},
 	{"id":"hall",
-	"name":"El Hall de Ikea", 
+	"name":"El hall de ikea", 
 	"description":"Te encuentras en el hall de ikea,pero estas solo y todo esta a oscuras.",
 	"items":["moneda de 1€","Linterna"],
-	"doors":["principal"]
+	"doors":["principal","hall"]
 	}
  ],
  "items":[
