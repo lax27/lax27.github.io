@@ -48,7 +48,7 @@ switch (comand){
  }
 }
 
-getDoorNumber(door){
+function getDoorNumber(door){
 	for (let i = 0; i < game_data.doors.length; i++){
 		if ( game_data.doors[i].id == door){
 			return i;
@@ -92,6 +92,11 @@ console.log("La instrucion", instruction);
 		break;
 		
 		case "coger":
+		game_data.rooms[curent_room].items.forEach(function(item){
+		 if (item == instrucion[1]){
+			items_picked.push()
+		 }		 
+		 });
 		break;
 		
 		default:
