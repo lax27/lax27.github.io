@@ -8,7 +8,7 @@
 	"items":["piedra","bicicleta"],
 	"doors":["principal","hall"]
 	},
-	{"id":"hall",
+	{"id":"hallRoom",
 	"name":"El hall de ikea", 
 	"description":"Te encuentras en el hall de ikea,pero estas solo y todo esta a oscuras.",
 	"items":["moneda de 1€","Linterna"],
