@@ -23,7 +23,6 @@
  ],
  "doors":[
 	{"id":"principal", "description": "Puerta de entrada al  edificio", "rooms":["parking", "hall"]},
-	{"id":"hall", "description": "El hall de ikea","rooms":["parking", "hall"]},
-	{"id":"salida", "description": "La salvacion"}
+	{"id":"hall", "description": "El hall de ikea","rooms":["parking", "hall"]}
  ]
 }
