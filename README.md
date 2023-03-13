@@ -45,12 +45,17 @@ Aqui almacenaremos la pagina web estatica de la asignatura asi como algunos ejem
 
 ## ¿Qué es el formato Markdown?
 
-  
+  Markdown es un lenguaje de marcado que facilita la aplicación de formato a un texto empleando una serie de caracteres de una forma especial. En principio, fue pensado para elaborar textos cuyo destino iba a ser la web con más rapidez y sencillez que si estuviésemos empleando directamente HTML.
 
 ## ¿Qué es el formato JSON? ¿Cómo se convierte un objeto a JSON? ¿Y JSON a un objeto?
   
 - Qué es el formato JSON?
   
+  Los json son archivos de texto que estan en un formato que puede ser interpretado por JavaScript,que sirve para el intercambio de datos y puede ser convertido en un objeto de JavaScript,Para poder ser utilizado debe ser interpretado por python,javaScript o excel
+
+  
 - Cómo se convierte un objeto a JSON?
+  
+  
   
 - Cómo se convierte JSON a un objeto?
