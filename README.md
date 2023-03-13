@@ -37,6 +37,8 @@ Aqui almacenaremos la pagina web estatica de la asignatura asi como algunos ejem
   
 - Que es CSS?
   
+  CSS, del inglés Cascading Style Sheets, es un lenguaje que maneja el diseño y presentación de las páginas web, es decir, cómo lucen cuando un usuario las visita. Funciona junto con el lenguaje HTML que se encarga del contenido básico de las páginas.Se les denomina hojas de estilo «en cascada» porque puedes tener varias hojas y una de ellas con las propiedades heredadas (o «en cascada») de otras. El CSS	No son etiquetas, sino son llamadas a las etiquetas del HTML.
+  
 - Que es Javascript?
 
 ##¿Qué es el formato Markdown?
@@ -45,6 +47,6 @@ Aqui almacenaremos la pagina web estatica de la asignatura asi como algunos ejem
   
 - Qué es el formato JSON?
   
--Cómo se convierte un objeto a JSON?
+- Cómo se convierte un objeto a JSON?
   
 - Cómo se convierte JSON a un objeto?
