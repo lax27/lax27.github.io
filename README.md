@@ -32,6 +32,7 @@ Aqui almacenaremos la pagina web estatica de la asignatura asi como algunos ejem
 ## ¿Qué es HTML? ¿CSS? ¿Javascript?
   
 - Que es HTML?
+  
   HTML del inglés de HyperText Markup Language,es el código que se utiliza para estructurar y desplegar una página web y sus contenidos mediante el uso de etiquetas.
   
 - Que es CSS?
