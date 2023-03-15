@@ -58,6 +58,7 @@ Aqui almacenaremos la pagina web estatica de la asignatura asi como algunos ejem
   
   Con JSON.stringify() convierte un objeto de JavaScript en una string de texto JSON
   
+  
 - Cómo se convierte JSON a un objeto?
   
   Si tenemos un string con un JSON lo podemos transformar en un objeto javaScript usando la función JSON.parse(json) que nos devolverá el objeto correspondiente a nuestro JSON.
