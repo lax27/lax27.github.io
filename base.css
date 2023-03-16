@@ -1,19 +1,49 @@
 html{
-
+    background-color: darkred;
 }
+
+body{
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: auto 1fr auto;
+}
+
+p{
+padding: 0 0 0 20px;
+font-size: 20px;
+}
+
 h1,h2,h3,h4,h5,h6{
+padding: 0 0 0 20px;
 font-family: 'Ubuntu condensed', sans-serif;
 }
-header,h1,main,aside,footer{
+
+footer{
+	
+	background-color: lightgray;
+}
+
+h1,main,aside{
+
 padding:0;
 margin:0;
-border:1px solid black;
 }
+
+
 header{
+color: black;
+background-color: lightgray;
 display:flex;
+padding:0;
+margin:0;
+}
+header h1{
+	margin: 0;
+    padding: 0 0px 0 20px;
 }
 nav{
 display:flex;
+
 }
 main{
 display:flex;
@@ -23,6 +53,26 @@ flex-basis: 75%;
 }
 aside{
 flex-basis: 25%;
+}
+
+
+#infoL{
+text-align-last: center;
+}
+
+#infoL ul{
+	list-style: none;
+	
+}
+#infoL{
+	    background-color: brown;
+}
+#natsu{
+	 margin-inline: auto;
+	display: flex;
+	width:350px;
+	height: 350px;
+	
 }
 
 @media (max-width: 600px){
@@ -47,40 +97,23 @@ div{
 display:block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 nav li {
+	margin: 60px;
    list-style-type: none;
    display: inline;
    padding-right: 5px;
+
+}
+
+ul li a {
+	color: cyan;
+}
+aside a {
+	color: cyan;
+	
+}
+nav li a {
+	 text-decoration:none;
+	padding: 17px 20px 17px 30px;
+	color: black;
 }
