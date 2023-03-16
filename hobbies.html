@@ -9,6 +9,22 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="base.css" />
+
+ <script>
+        function mostrar(id)
+        {
+            var objeto=document.getElementById(id)
+            if(objeto.style.display=="block")
+                objeto.style.display="none";
+            else
+                objeto.style.display="block";
+        }
+    </script>
+    <style>
+        .oculto {display:none;}
+    </style>
+
+
 </head>
 <body>
 <header>
@@ -28,22 +44,19 @@
 <p> Mi principal hobbie son los videojuegos, en general me gustan de todos los generos.
 <h3>Juegos con mas Horas</h3>
 <ul>
-<li><button>Monster Hunter World: 500h</button></li>
-<li><button>Leage of legends: 2500h aprox</button></li>
+<li><button  onclick="mostrar('MHW')" value="Mostrar/ocultar contenido 1">Monster Hunter World: 500h</button></li>
+<li><button onclick="mostrar('LOL')" value="Mostrar/ocultar contenido 2">Leage of legends: 2500h aprox</button></li>
 <li><button>World of warcraft: 3000h aprox</button></li>
 <li><button>Destiny 2: 521h</button></li>
-<li><button>Bralhalla: 250h</button></li>
+<li><button>brawlhalla : 250h</button></li>
 <li><button>Left 4 dead 2: 200h</button></li>
 <li><button>Terraria: 180h</button></li>
-<li><button>Csgo: 200h </button></li>
 <li><button>Valorant: 300h </button></li>
 <li><button>Apex Legends: 132h</button></li>
-
 </ul>
-<h3>Juegos Favoritos</h3>
+<h3 id="fav">Juegos Favoritos</h3>
 <ul>
 <li><button>Hollow Knight</button></li>
-<li><button>Spyro</button></li>
 <li><button>Dark souls</button></li>
 <li><button>Dark souls 3</button></li>
 <li><button>Styx</button></li>
@@ -52,6 +65,10 @@
 <li><button>Crash Bandicoot 3</button></li>
 <li><button>Hades</button></li>
 </ul>
+<img src="imgs/Games/MHW.jpg" class="oculto" id="MHW">
+<img src="imgs/Games/LOL.jpg" class="oculto" id="LOL">
+
+
 <h3>Anime y manga</h3>
 <p> Tambien veo todo tipo de anime y manga. Unos de mis animes favoritos es One Pice ,Feary Tail y Goblin Slayer.</p>
 <h3>Deporte</h3>
