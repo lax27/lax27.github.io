@@ -11,14 +11,18 @@
 <link rel="stylesheet" href="base.css" />
 
  <script>
+		
         function mostrar(id)
         {
-            var objeto=document.getElementById(id)
-            if(objeto.style.display=="block")
+            let objeto=document.getElementById(id)
+            if(objeto.style.display=="inline")
                 objeto.style.display="none";
+	
             else
-                objeto.style.display="block";
+                objeto.style.display="inline";	
         }
+		
+
     </script>
     <style>
         .oculto {display:none;}
@@ -43,32 +47,47 @@
 <h3>Videojuegos</h3>
 <p> Mi principal hobbie son los videojuegos, en general me gustan de todos los generos.
 <h3>Juegos con mas Horas</h3>
-<ul>
-<li><button  onclick="mostrar('MHW')" value="Mostrar/ocultar contenido 1">Monster Hunter World: 500h</button></li>
+<ul id="h">
+<li><button onclick="mostrar('MHW')" value="Mostrar/ocultar contenido 1">Monster Hunter World: 500h</button></li>
 <li><button onclick="mostrar('LOL')" value="Mostrar/ocultar contenido 2">Leage of legends: 2500h aprox</button></li>
-<li><button>World of warcraft: 3000h aprox</button></li>
-<li><button>Destiny 2: 521h</button></li>
-<li><button>brawlhalla : 250h</button></li>
-<li><button>Left 4 dead 2: 200h</button></li>
-<li><button>Terraria: 180h</button></li>
-<li><button>Valorant: 300h </button></li>
-<li><button>Apex Legends: 132h</button></li>
-</ul>
-<h3 id="fav">Juegos Favoritos</h3>
-<ul>
-<li><button>Hollow Knight</button></li>
-<li><button>Dark souls</button></li>
-<li><button>Dark souls 3</button></li>
-<li><button>Styx</button></li>
-<li><button>World of warcraft</button></li>
-<li><button>DOOM Eternal</button></li>
-<li><button>Crash Bandicoot 3</button></li>
-<li><button>Hades</button></li>
+<li><button onclick="mostrar('WOW')" value="Mostrar/ocultar contenido 3">World of warcraft: +4000h aprox</button></li>
+<li><button onclick="mostrar('DES')" value="Mostrar/ocultar contenido 4">Destiny 2: 521h</button></li>
+<li><button onclick="mostrar('BR')" value="Mostrar/ocultar contenido 5">brawlhalla : 250h</button></li>
+<li><button onclick="mostrar('L4')" value="Mostrar/ocultar contenido 6">Left 4 dead 2: 200h</button></li>
+<li><button onclick="mostrar('TR')" value="Mostrar/ocultar contenido 7">Terraria: 180h</button></li>
+<li><button onclick="mostrar('VL')" value="Mostrar/ocultar contenido 8">Valorant: 300h </button></li>
+<li><button onclick="mostrar('AX')" value="Mostrar/ocultar contenido 9">Apex: 132h</button></li>
 </ul>
 <img src="imgs/Games/MHW.jpg" class="oculto" id="MHW">
 <img src="imgs/Games/LOL.jpg" class="oculto" id="LOL">
-
-
+<img src="imgs/Games/WOW.png" class="oculto" id="WOW">
+<img src="imgs/Games/destiny.png" class="oculto" id="DES">
+<img src="imgs/Games/mako.jpg" class="oculto" id="BR">
+<img src="imgs/Games/l4d2.jpg" class="oculto" id="L4">
+<img src="imgs/Games/tera.jpg" class="oculto" id="TR">
+<img src="imgs/Games/valo.jpg" class="oculto" id="VL">
+<img src="imgs/Games/APEX.jpg" class="oculto" id="AX">
+<h3 id="fav">Juegos Favoritos</h3>
+<ul id="f">
+<li><button onclick="mostrar('HK')" value="Mostrar/ocultar contenido 10" >Hollow Knight</button></li>
+<li><button onclick="mostrar('DK1')" value="Mostrar/ocultar contenido 11">Dark souls</button></li>
+<li><button onclick="mostrar('DK3')" value="Mostrar/ocultar contenido 12">Dark souls 3</button></li>
+<li><button onclick="mostrar('ST')" value="Mostrar/ocultar contenido 13">Styx shards of darkness</button></li>
+<li><button onclick="mostrar('WOW2')" value="Mostrar/ocultar contenido 14">World of warcraft</button></li>
+<li><button onclick="mostrar('DM')" value="Mostrar/ocultar contenido 15">DOOM Eternal</button></li>
+<li><button onclick="mostrar('CB')" value="Mostrar/ocultar contenido 16" >Crash Bandicoot 3</button></li>
+<li><button onclick="mostrar('HA')" value="Mostrar/ocultar contenido 17">Hades</button></li>
+<li><button onclick="mostrar('MHW2')" value="Mostrar/ocultar contenido 18">Monser hunter world</button></li>
+</ul>
+<img src="imgs/Games/Juegos Favoritos/hollow.jpg" class="oculto" id="HK">
+<img src="imgs/Games/Juegos Favoritos/dk.jpg" class="oculto" id="DK1">
+<img src="imgs/Games/Juegos Favoritos/dk3.jpg" class="oculto" id="DK3">
+<img src="imgs/Games/Juegos Favoritos/styx.jpg" class="oculto" id="ST">
+<img src="imgs/Games/Juegos Favoritos/WOW2.jpg" class="oculto" id="WOW2">
+<img src="imgs/Games/Juegos Favoritos/DOOM.jpg" class="oculto" id="DM">
+<img src="imgs/Games/Juegos Favoritos/crash.jpg" class="oculto" id="CB">
+<img src="imgs/Games/Juegos Favoritos/HADES.png" class="oculto" id="HA">
+<img src="imgs/Games/Juegos Favoritos/MHW2.jpg" class="oculto" id="MHW2">
 <h3>Anime y manga</h3>
 <p> Tambien veo todo tipo de anime y manga. Unos de mis animes favoritos es One Pice ,Feary Tail y Goblin Slayer.</p>
 <h3>Deporte</h3>

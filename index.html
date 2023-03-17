@@ -9,6 +9,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="base.css" />
+
+ <script>
+		
+        function mostrar(id)
+        {
+            let objeto=document.getElementById(id)
+            if(objeto.style.display=="inline")
+                objeto.style.display="none";
+	
+            else
+                objeto.style.display="inline";	
+        }
+		
+    </script>
+    <style>
+        .oculto {display:none;}
+    </style>
+
 </head>
 <body>
 <header id="head">
@@ -27,11 +45,15 @@
 
 <article>
 <h2>Un poco sobre mi: </h2>
-<p>Soy una persona a la que le apasinan los videojueos desde bien chiquito, Actualmente estoy estudiando programacion para algun dia trabajar en el sector. En mi GitHub hay una version de mi primer juego que hice como practica para la asignaura de gameEngines,esta hecho con el motor Unity, y se trata de un plataformas 2d un poco bastante dificil.
+<p>Soy una persona a la que le apasionan los videojueos desde bien chiquito,Actualmente estoy estudiando programacion para algun dia trabajar en el sector. En mi <button id="cow" onclick="mostrar('COWs')" value="Mostrar/ocultar contenido 1" >GitHub</button> hay una version de mi primer juego que hice como practica para la asignaura de gameEngines,esta hecho con el motor Unity, y se trata de un plataformas 2d un poco bastante dificil.
 </p>
+
+<img src="imgs/cowsay.png" class="oculto" id="COWs">
 <p>
-A su vez estoy trabajando en el Proyecto de final, se trata de un rogelike done manejas a un plantmante que puede extraer semillas de los enemigos derotados para plantarlas y consegir armas letales con las que  poder deorrtar jefe final.
+A su vez estoy trabajando en el Proyecto de final, se trata de un roguelike done manejas a un plantmante que puede extraer semillas de los enemigos derotados para plantarlas y consegir armas letales con las que  poder deorrtar jefe final.
 </p>
+<img src="imgs/juego.png" id="j1"> 
+<img src="imgs/juego2.png" id="j2"> 
 <p>Me gustan los gatos, ya que tengo uno que aunque parezca una fiera en realidad es muy asustadizo y cariñoso.</p>
 
 <img src="imgs/natsu.jpg" id="natsu">
@@ -43,14 +65,12 @@ A su vez estoy trabajando en el Proyecto de final, se trata de un rogelike done 
 <a href="https://github.com/lax27?tab=repositories">Mi GitHub</a>
 <h3>Mis Redes Sociales:</h3>
 <ul>
-<li id="instagram" ><p>Mi instagram: </p> <a href="https://www.instagram.com/lax27__/">@lax27_</a></li>
-<li id="twiter" ><p>Mi twiter: </p> <a href="https://twitter.com/lax27_7/media">@VoidLax27</a></li>
-<li id="discord" ><p>Mi discord:</p><p> voidlax27#1976 </p>
+<li id="instagram" ><a href="https://www.instagram.com/lax27__/"><img src="imgs/ing.png" id="ing"></a></li>
+<li id="twiter" ><a href="https://twitter.com/lax27_7/media"><img src="imgs/tw.png" id="tw"></a></li>
+<li id="discord" ><img src="imgs/dis.png" id="dis"> <p> voidlax27#1976 </p>
 </ul>
 </aside>
-
 </main>
-
 <footer>
 <p>Alex Taravilla (c) <span id="footer-year">2022</span></p>
 <script>
