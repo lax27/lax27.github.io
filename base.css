@@ -1,0 +1,198 @@
+
+#cow:hover{
+	background: green;
+}
+
+#cow{
+	  all: unset;
+}
+body{
+	display: grid;
+	min-height: 100vh;
+	grid-template-rows: auto 1fr auto;
+}
+
+p{
+padding: 0 0 0 20px;
+font-size: 20px;
+}
+
+h1,h2,h3,h4,h5,h6{
+padding: 0 0 0 20px;
+font-family: 'Ubuntu condensed', sans-serif;
+}
+
+footer{
+	
+	background-color: lightgray;
+}
+
+h1,main,aside{
+
+padding:0;
+margin:0;
+}
+
+
+header{
+color: black;
+background-color: lightgray;
+display:flex;
+padding:0;
+margin:0;
+}
+header h1{
+	margin: 0;
+    padding: 0 0px 0 20px;
+}
+nav{
+display:flex;
+
+}
+main{
+display:flex;
+}
+article{
+flex-basis: 75%;
+}
+aside{
+flex-basis: 25%;
+}
+
+
+#infoL{
+text-align-last: center;
+}
+
+#infoL ul{
+	list-style: none;
+	
+}
+#infoL{
+	    background-color: brown;
+}
+#natsu{
+	 margin-inline: auto;
+	display: flex;
+	width:350px;
+	height: 350px;
+	
+}
+
+@media (max-width: 600px){
+main{
+flex-direction:column;	
+}
+article{
+flex-basis:100%;
+}
+aside{
+flex-basis:100%;
+}
+}	
+
+#terminal{
+	border:2px solid black;
+	min-width:240px;
+	height:120px;
+	overflow:scroll;
+}
+
+
+nav li {
+	margin: 60px;
+   list-style-type: none;
+   display: inline;
+   padding-right: 5px;
+
+}
+
+ul li a {
+	color: cyan;
+}
+aside a {
+	color: cyan;
+	
+}
+nav li a {
+	 text-decoration:none;
+	padding: 17px 20px 17px 30px;
+	color: black;
+}
+
+#fav {
+	display: absolute;
+}
+
+#j1{
+	min-width: -webkit-fill-available;
+}
+#j2{
+	    min-width: -webkit-fill-available;
+}
+
+#ing{
+	width:50px;
+	height:50px;
+}
+
+#tw{
+	width:70px;
+	height:70px;
+}
+
+#dis{
+	width:60px;
+	height:60px;
+}
+img{
+	width:300px;
+	height:300px;}
+
+#f{
+	display:flex;
+	list-style: none;
+	
+}
+
+#h{
+	list-style: none;
+	display:flex;
+	
+}
+
+#h button{
+		height:50px;
+		
+}
+#f button{
+		height:50px;
+}
+
+input{
+	width:500px;
+	height:50px;
+}
+
+#bc{
+    display: block;
+    padding: 13px;
+    position: absolute;
+    top: 50%;
+	left:25%;
+	background: darkgrey;
+	border-radius: 500%;
+	width:300px;
+	height:300px;
+
+}
+button:active{
+color:red
+}
+#bc:hover{
+	background:green;
+}
+
+#bc:Active{
+	background:red;
+}
