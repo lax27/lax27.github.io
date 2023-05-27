@@ -14,10 +14,6 @@ body{
 	min-height: 100vh;
 	grid-template-rows: auto 1fr auto;
 }
-#head{
-	color: black;
-}
-
 
 p{
 padding: 0 0 0 20px;
@@ -25,7 +21,7 @@ font-size: 20px;
 color:white;
 }
 
-h1,h2,h3,h4,h5,h6{
+h2,h3,h4,h5,h6{
 padding: 0 0 0 20px;
 font-family: 'Ubuntu condensed', sans-serif;
 color:white;
