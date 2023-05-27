@@ -13,14 +13,14 @@
 	"name":"El hall de ikea", 
 	"description":"Te encuentras en el hall de ikea,pero estas solo y todo esta a oscuras.Puedes dislumbrar una moneda y una linterna",
 	"items":["moneda de 1€","Linterna"],
-	"doors":["principal","hall"]
+	"doors":["principal","hall","pasillo"]
 	},
 	
 	{"id":"triPasillo",
 	"name":"Un pasillo con tres bifurcaciones", 
 	"description":"Es un pasillo que da miedito y todo esta a oscuras.Puedes ver una caja y tres bifurcaciones",
 	"items":["caja"],
-	"doors":["hall","pasillo"]
+	"doors":["hall","pasillo","sala1Door","sala2Door","sala3Door"]
 	},
 	
 	{"id":"sala1",
@@ -34,7 +34,7 @@
 	"name":"IkeaTP", 
 	"description":"es una sala con una puerta misteriosa",
 	"items":["mondea"],
-	"doors":["pasillo","sala2Door"]
+	"doors":["pasillo","sala2Door","entiDoor"]
 	},
 	
 	{"id":"sala3",
