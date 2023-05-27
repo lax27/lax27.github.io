@@ -4,7 +4,7 @@
  "rooms":[
 	{"id":"parking",
 	"name":"El Parking", 
-	"description":"el parking que no puedes usar",
+	"description":"el parking que no puedes usar,hay una piedra y una bicicleta",
 	"items":["piedra","bicicleta"],
 	"doors":["principal","hall"]
 	},

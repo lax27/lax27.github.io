@@ -59,44 +59,19 @@ function paraseInstruction(instruction){
 console.log("La instrucion", instruction);
 	switch (instruction[0]){
 		case "ver":
-		
-		break;
-		
-		case "ir":
-		let door_num = getDoorNumber(intruction[1]);
-		if (door_num < 0){
-		console.log("puerta erronea");
-		return;
-		}
-		
-		let room_num = getRoomNumber(game_data.doors[door_num].rooms[0]);
-			if (room_num == current_room){
-				current_room = getRoomNumber(game_data.doors[door_num].rooms[1]);
+		let item_number = findItemNumber(instruction[1]);
+
+			if (item_number < 0) {
+				console.log("Item erróneo");
+				return;
 			}
-			else{
-				current_room = room_num;
-			}
-
-		break;
-		
-		case "coger":
-			game_data.rooms[current_room].items.forEach(function(item){
-				if (item == instruction[1]){
-					items_picked.push(item);
-
-					let item_num = game_data.rooms[current_room].items.indexOf(item);
-					if (item_num < 0){
-						console.log("Error al borrar el item de la habitación");
-						return;
-					}
-
-					game_data.rooms[current_room].items.splice(item_num, 1);
-
-					return;
-				}
-			});
-
+			
+			let item_description = game_data.items[item_number].description;
+			
+			terminalOut("<p><strong>" + instruction[1] + ":</strong> " + item_description + "</p>");
+			
 			break;
+		
 		
 		default:
 			terminal_out("<p>"+comand+" Comando no encontrado</p>");
