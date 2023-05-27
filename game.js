@@ -39,6 +39,7 @@ switch (comand){
 function getDoorNumber(door){
 	for (let i = 0; i < game_data.doors.length; i++){
 		if ( game_data.doors[i].id == door){
+			console.log(i);
 			return i;
 		}
 	}
@@ -48,6 +49,7 @@ function getDoorNumber(door){
 function getRoomNumber (room){
 for	(let i = 0; i < game_data.rooms.length;i++){
 if (game_data.rooms[i].id == room){
+	console.log(i);
 		return i;
 		}
 	}
