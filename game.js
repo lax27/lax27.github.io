@@ -57,7 +57,36 @@ if (game_data.rooms[i].id == room){
 
 function paraseInstruction(instruction){
 console.log("La instrucion", instruction);
-
+	switch (instruction[0]){
+		case "ver":
+		
+			break;
+			
+			case 'ir':
+						
+			let door_number = getDoorNumber(instruction[1]);
+						
+			if (door_number < 0) {
+				console.log("Puerta errónea");
+				return;
+			}
+						
+			let room_number = getRoomNumber(game_data.doors[door_number].rooms[0]);
+			let next_room_name = "";
+							
+			if (room_number == current_room) {
+				current_room = getRoomNumber(game_data.doors[door_number].rooms[1]);
+			}
+							
+			else {
+				current_room = room_number;
+			}
+							
+			next_room_name = game_data.rooms[current_room].name
+							
+			terminal_out("<p>Cambiando de habitación a " + next_room_name + "</p>");
+						
+			break;
 		
 		
 		default:
