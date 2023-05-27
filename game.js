@@ -141,7 +141,7 @@ paraseInstruction(data);
 function game (data){
 game_data = data;
 
-document.getElementById("terminal").innerHTML = "<p><strong>¡Bienvenidos a DarkIkea!</strong> El juego de terror definitivo</p>";
-document.getElementById("terminal").innerHTML +="<p>Te encuentras en "+game_data.rooms[current_room].name+". ¿que quieres hacer?</P>";
+	terminal_out("<p><strong>¡Benvenido a ENTIerrame!</strong> El juego de terror definitivo.</p>");
+	terminal_out("<p>Te encuentras en " + data.rooms[current_room].name + ". ¿Qué quieres hacer?</p>");
 }
 fetch("https://lax27.github.io/game.json").then(response => response.json()).then(data => game(data));
