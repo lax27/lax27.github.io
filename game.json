@@ -20,7 +20,7 @@
 	"name":"es una caja", 
 	"description":"sadadsadsadsad.",
 	"items":["moneda de 1€","Linterna"],
-	"doors":["parking","caja"]
+	"doors":["parking","mueble"]
 	}
  ],
  "items":[
@@ -32,7 +32,7 @@
  "doors":[
 	{"id":"parking", "description": "Puerta de entrada al  edificio", "rooms":["parking", "hall"]},
 	{"id":"hall", "description": "El hall de ikea","rooms":["parking", "hall"]},
-	{"id":"parking", "description": "a","rooms":["parking", "caja"]}
+	{"id":"mueble", "description": "a","rooms":["parking", "caja"]}
  ]
 }
 
