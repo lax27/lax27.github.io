@@ -145,6 +145,15 @@ nav li a {
 	width:60px;
 	height:60px;
 }
+#it{
+	
+	width:60px;
+	height:60px;
+}
+#itch{
+	
+	   list-style-type: none;
+}
 img{
 	width:300px;
 	height:300px;}
