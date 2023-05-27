@@ -4,3 +4,35 @@
 	min-height:120px;
 }
 
+h1,h2,h3,h4,h5,h6{
+padding: 0 0 0 20px;
+font-family: 'Ubuntu condensed', sans-serif;
+
+}
+header{
+color: black;
+background-color: lightgray;
+display:flex;
+padding:0;
+margin:0;
+}
+nav li {
+	margin: 60px;
+   list-style-type: none;
+   display: inline;
+   padding-right: 5px;
+
+}
+
+ul li a {
+	color: cyan;
+}
+aside a {
+	color: cyan;
+	
+}
+nav li a {
+	 text-decoration:none;
+	padding: 17px 20px 17px 30px;
+	color: black;
+}
