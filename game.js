@@ -1,5 +1,5 @@
 let game_data;
-let current_room = 1;
+let current_room = 0;
 let items_picked = [];
 
 
