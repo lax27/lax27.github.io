@@ -16,16 +16,18 @@ switch (comand){
 		terminal_out("<p>"+game_data.rooms[current_room].description+"</p>");
 	break;
 	
-	case "ir":
-	//terminal_out("<p> Puedes ir a :"+game_data.rooms[current_room].doors+"</p>");
-	let doors = "";
-	let doors_num = game_data.rooms[current_room].doors.length;
-	for(let i = 0; i < doors_num;i++){
-	 doors += game_data.rooms[current_room].doors[i]+", ";
-	}
-	terminal_out("<p>Pudes ir a:"+doors+"</p>");
-	
-	break;
+		case 'ir':
+							
+			let doors = "";
+			let doors_num = game_data.rooms[current_room].doors.length;
+							
+			for (let i = 0; i < doors_num; i++) {
+				doors += game_data.rooms[current_room].doors[i] + " ";
+			}
+							
+			terminal_out("<p>Puedes ir a: " + doors + "</p>");
+							
+			break;
 	
 	default:
 		terminal_out("<p>"+comand+" Comando no encontrado</p>");
