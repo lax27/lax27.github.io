@@ -1,5 +1,5 @@
 let game_data;
-let current_room = 0;
+let current_room = 1;
 let items_picked = [];
 
 
@@ -142,8 +142,6 @@ function game (data){
 game_data = data;
 
 	terminal_out("<p><strong>¡Benvenido a ENTIerrame!</strong> El juego de terror definitivo.</p>");
-	terminal_out("<p>Te encuentras en " + game_data.rooms[0].name + ". ¿Qué quieres hacer?</p>");
-	terminal_out("<p>Te encuentras en " + game_data.rooms[1].name + ". ¿Qué quieres hacer?</p>");
-	terminal_out("<p>Te encuentras en " + game_data.rooms[2].name + ". ¿Qué quieres hacer?</p>");
+	terminal_out("<p>Te encuentras en " + game_data.rooms[current_room].name + ". ¿Qué quieres hacer?</p>");
 }
 fetch("https://lax27.github.io/game.json").then(response => response.json()).then(data => game(data));
