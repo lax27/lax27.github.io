@@ -84,6 +84,7 @@ console.log("La instrucion", instruction);
 			terminal_out("<p><strong>" + instruction[1] + ":</strong> " + item_description + "</p>");
 			
 			break;
+			
 	case 'ir':
 			
 			let door_number = getDoorNumber(instruction[1]);
@@ -92,7 +93,6 @@ console.log("La instrucion", instruction);
 				console.log("Puerta errónea");
 				return;
 			}
-			
 			
 			let room_number = getRoomNumber(game_data.doors[door_number].rooms[0]);
 			
