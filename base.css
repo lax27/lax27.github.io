@@ -130,7 +130,9 @@ nav li a {
 	display: absolute;
 }
 
-
+#head{
+	color: black;
+}
 
 #ing{
 	width:50px;
@@ -170,7 +172,9 @@ img{
 	display:flex;
 	
 }
-
+#foot{
+	color: black;
+}
 #h button{
 		height:50px;
 		
