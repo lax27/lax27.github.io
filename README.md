@@ -33,7 +33,7 @@ Aqui almacenaremos la pagina web estatica de la asignatura asi como algunos ejem
   
 - Que es HTML?
   
-  HTML del inglés de HyperText Markup Language,es el código que se utiliza para estructurar y desplegar una página web y sus contenidos mediante el uso de etiquetas.
+  HTML del inglés de HyperText Markup Language,es el código que se utiliza para estructurar y desplegar una página web y sus contenidos mediante el uso de etiquetas.Hyper texto te permite enlazar páginas entre sí, HTML 5 es el estándar actualmente(2023). 
   
 - Que es CSS?
   
