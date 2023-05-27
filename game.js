@@ -37,8 +37,10 @@ switch (comand){
 }
 
 function getDoorNumber(door){
-	for (let i = 0; i < game_data.doors.length; i++){
-		if ( game_data.doors[i].id == door){
+	let doors_num = game_data.doors.length;
+	
+	for (let i = 0; i < doors_num; i++) {
+		if (game_data.doors[i].id == door) {
 			return i;
 		}
 	}
@@ -46,11 +48,14 @@ function getDoorNumber(door){
 }
 	
 function getRoomNumber (room){
-for	(let i = 0; i < game_data.rooms.length;i++){
-if (game_data.rooms[i].id == room){
-		return i;
+	let rooms_num = game_data.rooms.length;
+	
+	for (let i = 0; i < rooms_num; i++) {
+		if (game_data.rooms[i].id == room) {
+			return i;
 		}
 	}
+	
 	return -1;
 }
 
@@ -107,6 +112,7 @@ console.log("La instrucion", instruction);
 			
 			terminal_out("<p>Cambiando de habitación a " + next_room_name + "</p>");
 			
+			break;
 
 
 		default:
