@@ -14,7 +14,9 @@ body{
 	min-height: 100vh;
 	grid-template-rows: auto 1fr auto;
 }
-
+h1{
+	color:black;
+}
 p{
 padding: 0 0 0 20px;
 font-size: 20px;
@@ -163,7 +165,9 @@ img{
 	list-style: none;
 	
 }
-
+#foot{
+	color: black;
+}
 #h{
 	list-style: none;
 	display:flex;
