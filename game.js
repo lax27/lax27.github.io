@@ -54,12 +54,33 @@ if (game_data.rooms[i].id == room){
 	return -1;
 }
 
+function getItemNumber (item) {
+	let items_num = game_data.items_num.length;
+	
+	for (let i = 0; i < items_num; i++) {
+		if (game_data.items[i].id == item) {
+			return i;
+		}
+	}
+	
+	return -1;
+}
 
 function paraseInstruction(instruction){
 console.log("La instrucion", instruction);
 	switch (instruction[0]){
 		case "ver":
-		
+					let item_number = getItemNumber(instruction[1]);
+
+			if (item_number < 0) {
+				console.log("Item erróneo");
+				return;
+			}
+			
+			let item_description = game_data.items[item_number].description;
+			
+			terminal_out("<p><strong>" + instruction[1] + ":</strong> " + item_description + "</p>");
+			
 			break;
 			
 			case 'ir':
