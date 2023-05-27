@@ -6,14 +6,14 @@
 	"name":"El Parking", 
 	"description":"el parking que no puedes usar,hay una piedra y una bici",
 	"items":["piedra","bicicleta"],
-	"doors":["hall"]
+	"doors":["principal","hall"]
 	},
 	
 	{"id":"hallRoom",
 	"name":"El hall de ikea", 
 	"description":"Te encuentras en el hall de ikea,pero estas solo y todo esta a oscuras.",
 	"items":["moneda de 1€","Linterna"],
-	"doors":["principal","salida"]
+	"doors":["principal","hall"]
 	}
  ],
  "items":[
@@ -23,7 +23,7 @@
 	{"id":"linterna", "name":"linterna", "description":"Es una linterna que no da mucha luz pero sirvira.", "pickable":"true"}
  ],
  "doors":[
-	{"id":"principal", "description": "Puerta de entrada al  edificio", "rooms":["parking", "hall"]},
-	{"id":"hall", "description": "El hall de ikea","rooms":["parking", "hall"]}
+	{"id":"principal", "description": "Puerta de entrada al  edificio", "rooms":["parking", "hallRoom"]},
+	{"id":"hall", "description": "El hall de ikea","rooms":["parking", "hallRoom"]}
  ]
 }
