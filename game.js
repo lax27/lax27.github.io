@@ -25,7 +25,7 @@ switch (comand){
 			doors += game_data.rooms[current_room].doors[i] + " ";
 		}
 							
-		terminal_out("<p>Puedes ir a: " + doors + "</p>");
+		terminal_out("<p>Puedes ir a: " + doors + ",</p>");
 							
 		break;
 	
@@ -100,7 +100,7 @@ console.log("La instrucion", instruction);
 				current_room = getRoomNumber(game_data.doors[door_number].rooms[1]);
 			}
 			else {
-				current_room = 2;
+				current_room = room_number;
 			}
 			
 			let next_room_name = game_data.rooms[current_room].name;
