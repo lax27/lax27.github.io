@@ -15,6 +15,7 @@
 	"items":["moneda de 1€","Linterna"],
 	"doors":["principal","hall"]
 	}
+	
  ],
  "items":[
 	{"id":"piedra", "name":"Pedrusco murgoso", "description":"Es una piedra sucia", "pickable":"true"},
