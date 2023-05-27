@@ -11,28 +11,64 @@
 	
 	{"id":"hallRoom",
 	"name":"El hall de ikea", 
-	"description":"Te encuentras en el hall de ikea,pero estas solo y todo esta a oscuras.",
+	"description":"Te encuentras en el hall de ikea,pero estas solo y todo esta a oscuras.Puedes dislumbrar una moneda y una linterna",
 	"items":["moneda de 1€","Linterna"],
 	"doors":["principal","hall"]
 	},
 	
 	{"id":"triPasillo",
 	"name":"Un pasillo con tres bifurcaciones", 
-	"description":"Te encuentras en el hall de ikea,pero estas solo y todo esta a oscuras.",
-	"items":["moneda de 1€","Linterna"],
+	"description":"Es un pasillo que da miedito y todo esta a oscuras.Puedes ver una caja y tres bifurcaciones",
+	"items":["caja"],
 	"doors":["hall","pasillo"]
 	},
+	
+	{"id":"sala1",
+	"name":"Tu Muerte", 
+	"description":"Vaya parece que no has tenido buena suerte, has Muerto de la forma mas estupida, te asutases con una figura 3d de un cowsay y te cayo una caja en la cabeza (bad ending)",
+	"items":["Tu AlMa"],
+	"doors":["pasillo","sala1Door"]
+	},
+	
+	{"id":"sala2",
+	"name":"IkeaTP", 
+	"description":"es una sala con una puerta misteriosa",
+	"items":["mondea"],
+	"doors":["pasillo","sala2Door"]
+	},
+	
+	{"id":"sala3",
+	"name":"una sala normal y corriente", 
+	"description":"es una sala normal, derepente te acuerdas que nunca has visitado un ikea y te despiertas en tu casa y te preparas para ir a clase(normal ending)",
+	"items":["despertador"],
+	"doors":["pasillo","sala3Door"]
+	},
+	
+	{"id":"enti",
+	"name":"Sala02", 
+	"description":"Al curzar la puerta te despiertas, estas en mitad de una clase de rafa, gracias a que te has despetdo no supenderas(good ending)",
+	"items":["piedra"],
+	"doors":["sala3Door","entiDoor"]
+	}
 	
  ],
  "items":[
 	{"id":"piedra", "name":"Pedrusco murgoso", "description":"Es una piedra sucia", "pickable":"true"},
 	{"id":"bicicleta", "name":"bicicleta extraña", "description":"Es una bicicleta abandonada con un asiento un poco extraño ", "pickable":"false"},
 	{"id":"mondea", "name":"mondea", "description":"Es una mondea de 1€ algo sucia.", "pickable":"true"},
-	{"id":"linterna", "name":"linterna", "description":"Es una linterna que no da mucha luz pero sirvira.", "pickable":"true"}
+	{"id":"linterna", "name":"linterna", "description":"Es una linterna que no da mucha luz pero sirvira.", "pickable":"true"},
+	{"id":"caja", "name":"caja", "description":"Una caja con manchas de sangre", "pickable":"false"},
+	{"id":"Tu AlMa", "name":"Tu AlMa", "description":"ahora eres un espiritu", "pickable":"false"},
+	{"id":"despertador", "name":"despertador", "description":"tu despertador", "pickable":"true"}
+	
  ],
  "doors":[
 	{"id":"principal", "description": "Puerta de entrada al  edificio", "rooms":["parking", "hallRoom"]},
 	{"id":"hall", "description": "El hall de ikea","rooms":["parking", "hallRoom"]},
-	{"id":"pasillo", "description": "El hall de ikea","rooms":["hallRoom","triPasillo"]},
+	{"id":"pasillo", "description": "Un pasillo","rooms":["hallRoom","triPasillo"]},
+	{"id":"sala1Door", "description": "puerta de la sala1","rooms":["triPasillo","sala1"]},
+	{"id":"sala2Door", "description": "puerta de la sala1","rooms":["triPasillo","sala2"]},
+	{"id":"sala3Door", "description": "puerta de la sala1","rooms":["triPasillo","sala3"]},
+	{"id":"entiDoor", "description": "puerta que te ayudara a no suspender","rooms":["sala2","enti"]}
  ]
 }
