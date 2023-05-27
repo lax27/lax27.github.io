@@ -35,7 +35,7 @@ footer{
 		color: black;
 }
 
-h1,main,aside{
+main,aside{
 
 padding:0;
 margin:0;
@@ -49,7 +49,7 @@ display:flex;
 padding:0;
 margin:0;
 }
-header h1{
+header{
 	margin: 0;
     padding: 0 0px 0 20px;
 }
