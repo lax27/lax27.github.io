@@ -57,45 +57,7 @@ if (game_data.rooms[i].id == room){
 
 function paraseInstruction(instruction){
 console.log("La instrucion", instruction);
-	switch (instruction[0]){
-		case "ver":
-		let item_number = findItemNumber(instruction[1]);
 
-			if (item_number < 0) {
-				console.log("Item erróneo");
-				return;
-			}
-			
-			let item_description = game_data.items[item_number].description;
-			
-			terminal_out("<p><strong>" + instruction[1] + ":</strong> " + item_description + "</p>");
-			break;
-			
-			case 'ir':
-						
-			let door_number = findDoorNumber(instruction[1]);
-						
-			if (door_number < 0) {
-				console.log("Puerta errónea");
-				return;
-			}
-						
-			let room_number = findRoomNumber(game_data.doors[door_number].rooms[0]);
-			let next_room_name = "";
-							
-			if (room_number == current_room) {
-				current_room = findRoomNumber(game_data.doors[door_number].rooms[1]);
-			}
-							
-			else {
-				current_room = room_number;
-			}
-							
-			next_room_name = game_data.rooms[current_room].name
-							
-			terminal_out("<p>Cambiando de habitación a " + next_room_name + "</p>");
-						
-			break;
 		
 		
 		default:
