@@ -39,7 +39,6 @@ switch (comand){
 function getDoorNumber(door){
 	for (let i = 0; i < game_data.doors.length; i++){
 		if ( game_data.doors[i].id == door){
-			console.log(i);
 			return i;
 		}
 	}
@@ -49,7 +48,6 @@ function getDoorNumber(door){
 function getRoomNumber (room){
 for	(let i = 0; i < game_data.rooms.length;i++){
 if (game_data.rooms[i].id == room){
-	console.log(i);
 		return i;
 		}
 	}
@@ -96,13 +94,13 @@ console.log("La instrucion", instruction);
 				return;
 			}
 			
-			let room_number = getRoomNumber(game_data.doors[0].rooms[0]);
+			let room_number = getRoomNumber(game_data.doors[door_number].rooms[0]);
 			
 			if (room_number == current_room) {
-				current_room = getRoomNumber(game_data.doors[1].rooms[1]);
+				current_room = getRoomNumber(game_data.doors[door_number].rooms[1]);
 			}
 			else {
-				current_room = room_number;
+				current_room = 2;
 			}
 			
 			let next_room_name = game_data.rooms[current_room].name;
