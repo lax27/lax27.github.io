@@ -107,10 +107,6 @@ console.log("La instrucion", instruction);
 			
 			terminal_out("<p>Cambiando de habitación a " + next_room_name + "</p>");
 			
-			break;
-
-
-
 
 
 		default:
