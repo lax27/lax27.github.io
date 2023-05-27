@@ -28,6 +28,32 @@ switch (comand){
 		terminal_out("<p>Puedes ir a: " + doors +"</p>");
 							
 		break;
+		
+		case 'coger':
+			
+			let items = "";
+			let items_num = game_data.rooms[current_room].items.length;
+			
+			for (let i = 0; i < items_num; i++) {
+				items += game_data.rooms[current_room].items[i] + " ";
+			}
+			
+			terminal_out("<p>Los items en la sala son: " + items + "</p>");
+		
+			break;
+			
+		case 'inventario':
+		
+			let items_inventory = "";
+			let items_num_inventory = items_picked.length;
+			
+			for (let i = 0; i < items_num_inventory; i++) {
+				items_inventory += items_picked[i] + " ";
+			}
+			
+			terminal_out("<p>El inventario que tienes es: " + items_inventory + "</p>");
+		
+			break;
 	
 	
 	default:
