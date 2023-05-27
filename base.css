@@ -7,7 +7,7 @@
 	  all: unset;
 }
 body{
-	background-image: src="imgs/back.jpng"
+	background-image:url(imgs/back.jpg);
 	display: grid;
 	min-height: 100vh;
 	grid-template-rows: auto 1fr auto;
