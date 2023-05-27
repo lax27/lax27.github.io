@@ -25,7 +25,7 @@ switch (comand){
 			doors += game_data.rooms[current_room].doors[i] + " ";
 		}
 							
-		terminal_out("<p>Puedes ir a: " + doors + ",</p>");
+		terminal_out("<p>Puedes ir a: " + doors + "," + "</p>");
 							
 		break;
 	
