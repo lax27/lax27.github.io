@@ -69,7 +69,6 @@ console.log("La instrucion", instruction);
 			let item_description = game_data.items[item_number].description;
 			
 			terminal_out("<p><strong>" + instruction[1] + ":</strong> " + item_description + "</p>");
-			
 			break;
 		
 		
