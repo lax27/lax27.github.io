@@ -17,7 +17,6 @@ switch (comand){
 	break;
 	
 	case "ir":
-	
 	//terminal_out("<p> Puedes ir a :"+game_data.rooms[current_room].doors+"</p>");
 	let doors = "";
 	let doors_num = game_data.rooms[current_room].doors.length;
