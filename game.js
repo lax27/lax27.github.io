@@ -93,6 +93,7 @@ console.log("La instrucion", instruction);
 				return;
 			}
 			
+			
 			let room_number = getRoomNumber(game_data.doors[door_number].rooms[0]);
 			
 			if (room_number == current_room) {
