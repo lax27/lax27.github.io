@@ -16,8 +16,20 @@ switch (comand){
 			terminal_out("<p>"+game_data.rooms[current_room].description+"</p>");
 		break;
 		
+		case 'ir':
+							
+			let doors = "";
+			let doors_num = game_data.rooms[current_room].doors.length;
+							
+			for (let i = 0; i < doors_num; i++) {
+				doors += game_data.rooms[current_room].doors[i] + " ";
+			}
+							
+			terminal_Out("<p>Puedes ir a: " + doors + "</p>");
+							
+			break;
+							
 
- }
 }
 
 function getDoorNumber(door){
