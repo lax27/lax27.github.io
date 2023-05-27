@@ -70,13 +70,20 @@ function paraseInstruction(instruction){
 console.log("La instrucion", instruction);
 	switch (instruction[0]){
 
-
-
-
-
-
-
-
+	case 'ver':
+		
+			let item_number = getItemNumber(instruction[1]);
+			
+			if (item_number < 0) {
+				terminal_out("<p>El item<strong> " + instruction[1] + "</strong> no se encuentra en la zona</p>");
+				return;
+			}
+			
+			let item_description = game_data.items[item_number].description;
+			
+			terminal_out("<p><strong>" + instruction[1] + ":</strong> " + item_description + "</p>");
+			
+			break;
 
 
 
